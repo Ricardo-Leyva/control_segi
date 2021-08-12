@@ -1,6 +1,8 @@
 import express, { Application } from "express";
-import morgan from 'morgan';
-import cors from 'cors'; 
+// import morgan from 'morgan';
+// import cors from 'cors'; 
+import cors from "cors";
+import morgan from "morgan"
 
 import indexroutes from "./routes/indexroutes";
 import usuariosroutes from "./routes/usuariosroutes";
@@ -32,7 +34,7 @@ class Server {
             
         });
     }
-//hi
+
 }
 const server = new Server();
 server.start();
